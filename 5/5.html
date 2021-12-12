@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Desarrollo web en entorno cliente - Unidad 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../inicio.html">DWES - Unidad 1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ejercicio 1
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <li><a class="dropdown-item" href="../1/1.html">Desarrollador front-end, back-end y
+                                        full-stack</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../1/1.html#b1">Framework CSS y ejemplos</a></li>
+                                <li><a class="dropdown-item" href="../1/1.html#c1">WCAG e importancia de la
+                                        validación</a></li>
+                                <li><a class="dropdown-item" href="../1/1.html#d1">Servidor web, HTTP, Apache y
+                                        XAMPP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ejercicio 2
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                <li><a class="dropdown-item" href="../2/2.html">Instalación de XAMPP en Windows</a></li>
+                                <li><a class="dropdown-item" href="../2/2.html#b2">Instalación de XAMPP en Linux</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../2/2.html#c2">Ejecución de PHP embebido y PHP
+                                        puro</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ejercicio 3
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                                <li><a class="dropdown-item" href="../3/a/3a.html">Formulario de recogida y validación
+                                        de datos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../3/b/3b.html">Formulario para generación de CV</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ejercicio 4
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                                <li><a class="dropdown-item" href="../4/a/4a.html">Juego de piedra, papel, tijera,
+                                        lagarto o
+                                        Spock</a></li>
+                                <li><a class="dropdown-item" href="../4/b/4b.html">Cálculo del área y longitud de una
+                                        circunferencia</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="../4/c/4c.html">Informe de salud: IMC y metabolismo
+                                        basal</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink5" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ejercicio 5
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
+                                <li><a class="dropdown-item" href="5.html">Sistema de control de versiones</a></li>
+                                <li><a class="dropdown-item" href="5.html#b5">Qué es Git y Github</a></li>
+                                <li><a class="dropdown-item" href="5.html#c5">Creación de una cuenta en Github</a>
+                                </li>
+                                <li><a class="dropdown-item" href="5.html#d5">Subida de un proyecto a Github</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" style="padding-top: 80px; padding-bottom: 30px; height: 90vh; overflow-y: auto">
+        <h3 style="font-weight: bold">Sistema de control de versiones</h3>
+        <br />
+        <p>Es un sistema que registra los cambios realizados en un archivo o conjunto de archivos (tanto
+            inclusión/creación de archivos nuevos como modificación o borrado de los ya existentes) a lo largo del
+            tiempo, de forma que se puedan recuperar versiones concretas con posterioridad.</p>
+        <p>Un sistema de control de versiones centralizado es aquel en el que se utiliza un único servidor que contiene
+            todos los archivos versionados y varios clientes que descargan los archivos desde ese servidor. La principal
+            desventaja que presenta este sistema es que si el servidor deja de funcionar, nadie podrá colaborar o
+            guardar cambios en los archivos almacenados en el servidor.</p>
+        <p id="b5">Sin embargo, en un sistema de control de versiones distribuido, los clientes no solamente descargan la
+            última copia instantánea de los archivos, sino que se replica completamente el repositorio. De esta forma,
+            si el servidor deja de funcionar, cualquiera de los repositorios disponibles en los clientes puede ser
+            copiado al servidor con el fin de restaurarlo.</p>
+        <br />
+        <h3 style="font-weight: bold">Git y GitHub</h3>
+        <br />
+        <p>Git es un sistema de control de versiones distribuido, generalmente utilizado para coordinar el
+            trabajo entre programadores. Destaca por su gran rendimiento, seguridad y flexibilidad.</p>
+        <p id="c5">No hay que confundirlo con GitHub, que es una web que ofrece un servicio de alojamiento de
+            repositorios y que utiliza el sistema de control de versiones distribuido Git. GitHub fue creado para alojar
+            el código de las aplicaciones de cualquier desarrollador. Por lo tanto, GitHub es un portal para gestionar
+            las aplicaciones que utilizan el sistema de control de versiones Git.</p>
+        <br />
+        <h3 style="font-weight: bold">Creación de cuenta en GitHub</h3>
+        <br />
+        <p>Iremos a la dirección <a href="http://www.github.com">http://www.github.com</a> y pulsaremos en el botón
+            "Sign up" situado arriba a la derecha. A continuación iremos introduciendo nuestra dirección de correo
+            electrónico, elegiremos una contraseña, un nombre de usuario y diremos si queremos o no recibir
+            actualizaciones del producto y noticias via correo electrónico:</p>
+        <img src="img/github1.jpg" alt="Creación de cuenta en GitHub" width="475" />
+        <br /><br /><br />
+        <p>A continuación completaremos un proceso de verificación mediante imágenes:</p>
+        <img src="img/github2.jpg" alt="Creación de cuenta en GitHub" width="475" />
+        <br /><br /><br />
+        <p>Y posteriormente comprobaremos si hemos recibido un código en el correo electrónico especificado en el primer
+            paso y lo introduciremos:</p>
+        <img src="img/github3.jpg" alt="Creación de cuenta en GitHub" width="475" />
+        <br /><br /><br />
+        <p>Ya casi lo tenemos! Por último nos hacen algunas preguntas como:</p>
+        <ul>
+            <li>
+                Cuántos miembros del equipo trabajarán contigo
+            </li>
+            <li>
+                Si eres estudiante o profesor
+            </li>
+            <li>
+                Qué características específicas estás interesado en usar
+            </li>
+        </ul>
+        <p id="d5">Después de contestar estas preguntas, nos da a elegir entre la versión gratuita y de pago. Pulsamos
+            sobre el botón "Continue for free" y...ya tenemos nuestra cuenta en GitHub!</p>
+        <p>En mi caso, mi cuenta de usuario de GitHub es <a href="http://www.github.com/ercc75">https://github.com/ercc75</a></p>
+        <br />
+        <h3 style="font-weight: bold">Subida de un proyecto a GitHub</h3>
+        <br />
+        <p>Usaremos Git para subir un proyecto a GitHub. Instalaremos el sistema de control de versiones Git en nuestro
+            ordenador y realizaremos los pasos que se describen a continuación.</p>
+        <p>Iniciamos la cuenta GitHub (en este caso ercc75) y en el menú desplegable "+" situado arriba a la derecha,
+            elegimos la opción "New repository". Creamos el nuevo repositorio llamado "ejemplo_tarea1_DWES" de la
+            siguiente forma:</p>
+        <img src="img/github4.jpg" alt="Subida de un proyecto a GitHub" />
+        <br /><br /><br />
+        <p>Abrimos la ventana de comandos Git, nos vamos al directorio donde queremos copiar el repositorio creado en
+            GitHub y ejecutamos la instrucción "git clone" junto con el nombre del repositorio, de la siguiente forma:
+        </p>
+        <img src="img/github5.jpg" alt="Subida de un proyecto a GitHub" width="680" />
+        <br /><br /><br />
+        <p>Ya tenemos creada en el directorio de nuestro disco duro local la carpeta "ejemplo_tarea1_DWES". Aquí
+            crearemos/copiaremos los archivos que queramos subir a Github:</p>
+        <img src="img/github6.jpg" alt="Subida de un proyecto a GitHub" width="680" />
+        <br /><br /><br />
+        <p>Mediante el comando "git add ." subiremos al staging area (zona todavía en nuestro disco duro local) todo lo
+            creado/modificado/borrado. Con el comando "git status" podemos comprobar cuáles han sido las operaciones
+            realizadas:</p>
+        <img src="img/github7.jpg" alt="Subida de un proyecto a GitHub" width="680" />
+        <br /><br /><br />
+        <p>Mediante el comando "git commit" traspasaremos los cambios al local .git, paso inmediatamente anterior a la
+            subida al almacenamiento remoto GitHub. El parámetro "-m" sirve para añadir un comentario aclarativo a la
+            operación commit:</p>
+        <img src="img/github8.jpg" alt="Subida de un proyecto a GitHub" width="680" />
+        <br /><br /><br />
+        <p>Como paso previo a la subida a GitHub, crearemos un token. Para ello, pulsaremos el icono de nuestro usuario
+            situado en la parte superior derecha e iremos a Settings -> Developer settings -> Personal access token ->
+            Generate new token, introducimos los siguientes datos para nuestro ejemplo y le damos a "Generate token":
+        </p>
+        <img src="img/github9.jpg" alt="Subida de un proyecto a GitHub" />
+        <br /><br /><br />
+        <p>Por último, ejecutamos el comando "git push" para subir todo a GitHub, usando el token obtenido anteriormente
+            de la siguiente forma:</p>
+        <img src="img/github10.jpg" alt="Subida de un proyecto a GitHub" width="680" />
+        <br /><br /><br />
+        <p>Desde la interfaz de GitHub podemos comprobar que se ha subido todo correctamente:</p>
+        <img src="img/github11.jpg" alt="Subida de un proyecto a GitHub" />
+        <br /><br /><br />
+        <p style="text-align: right;"><a href="5.html">Ir al principio</a></p>
+    </div>
+
+    <footer>
+        <div class="container-fluid text-center p-3" style="background-color: lightgrey;">
+            <p> Eduardo Rafael Cañizares Caballero - 2º DAWS - 2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Desarrollo web en entorno cliente - Unidad 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../inicio.html">DWES - Unidad 1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ejercicio 1
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                <li><a class="dropdown-item" href="1.html">Desarrollador front-end, back-end y
+                                        full-stack</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#b1">Framework CSS y ejemplos</a></li>
+                                <li><a class="dropdown-item" href="#c1">WCAG e importancia de la validación</a></li>
+                                <li><a class="dropdown-item" href="#d1">Servidor web, HTTP, Apache y XAMPP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ejercicio 2
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                <li><a class="dropdown-item" href="../2/2.html">Instalación de XAMPP en Windows</a></li>
+                                <li><a class="dropdown-item" href="../2/2.html#b2">Instalación de XAMPP en Linux</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../2/2.html#c2">Ejecución de PHP embebido y PHP
+                                        puro</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ejercicio 3
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                                <li><a class="dropdown-item" href="../3/a/3a.html">Formulario de recogida y validación
+                                        de datos</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../3/b/3b.html">Formulario para generación de CV</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ejercicio 4
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+                                <li><a class="dropdown-item" href="../4/a/4a.html">Juego de piedra, papel, tijera,
+                                        lagarto o
+                                        Spock</a></li>
+                                <li><a class="dropdown-item" href="../4/b/4b.html">Cálculo del área y longitud de una
+                                        circunferencia</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="../4/c/4c.html">Informe de salud: IMC y metabolismo
+                                        basal</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink5" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ejercicio 5
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink5">
+                                <li><a class="dropdown-item" href="../5/5.html">Sistema de control de versiones</a></li>
+                                <li><a class="dropdown-item" href="../5/5.html#b5">Qué es Git y Github</a></li>
+                                <li><a class="dropdown-item" href="../5/5.html#c5">Creación de una cuenta en Github</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../5/5.html#d5">Subida de un proyecto a Github</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" style="padding-top: 80px; padding-bottom: 30px; height: 90vh; overflow-y: auto">
+        <h3 style="font-weight: bold">Diferencias entre desarrollador front-end, back-end y full-stack</h3>
+        <br />
+        <p>El diseño front-end se refiere a lo que el usuario ve. Como dice la palabra, es la parte frontal de la página
+            web. Esta parte de diseño la controlaremos mediante código html, hojas de estilo (CSS) para optimizar la
+            estética y JavaScript para proporcionar interactividad y dinamismo a la página.</p>
+        <p>El diseño back-end, como indica la palabra, se refiere a la parte que va detrás de lo que el usuario ve a
+            simple vista. Para ello utilizaremos el lenguaje PHP para procesar la información que recibimos del usuario.
+            Esta parte no se ejecuta en el ordenador del usuario, sino en un servidor.</p>
+        <p id="b1">El diseño full-stack abarca tanto el diseño front-end como el back-end.</p>
+        <br />
+        <h3 style="font-weight: bold">Framework CSS</h3>
+        <br />
+        <p>Es una biblioteca de estilos css genéricos que se puede usar para realizar un diseño web. La principal
+            ventaja es que proporciona una forma relativamente fácil y rápida de realizar un diseño web. Como principal
+            inconveniente es que al ser bibliotecas de estilos usadas de forma masiva, se corre el riesgo de perder
+            originalidad en el diseño.</p>
+        <br />
+        <h3 style="font-weight: bold">Bootstrap</h3>
+        <br />
+        <p>Actualmente Bootstrap (<a href="https://getbootstrap.com">https://getbootstrap.com</a>) es el framework CSS
+            más famoso y utilizado, cuya versión actual es la 5. Cuenta con una base muy amplia de usuarios y va
+            incorporando rápidamente las novedades CSS que van surgiendo. Se basa en un sistema GRID que permite diseñar
+            usando un grid de 12 columnas donde se debe plasmar el contenido. De esta forma se pueden realizar diseños
+            web responsivos de forma más fácil e intuitiva.</p>
+        <br />
+        <h3 style="font-weight: bold">Más frameworks</h3>
+        <br />
+        <p id="c1">Otros frameworks CSS además de Bootstrap son: Materialize CSS (<a
+                href="https://materializecss.com">https://materializecss.com</a>), que implementa el tema de diseño
+            “Material Design”; Tailwind CSS (<a href="https://tailwindcss.com">https://tailwindcss.com</a>), con un
+            enfoque distinto a Bootstrap, ya que cuenta con las llamadas clases de
+            utilidad; Foundation (<a href="https://get.foundation">https://get.foundation</a>), que cuenta con unas
+            herramientas adicionales orientadas a la creación de mails.</p>
+        <br />
+        <h3 style="font-weight: bold">Qué es WCAG</h3>
+        <br />
+        <p>WCAG (Web Content Accessibility Guidelines, <a
+                href="https://www.w3.org/TR/WCAG21">https://www.w3.org/TR/WCAG21</a>) ó Pautas de Accesibilidad al
+            Contenido Web son una serie de recomendaciones publicadas por el World Wide Web Consortium (W3C, <a
+                href="https://www.w3.org">https://www.w3.org</a>) orientadas a conseguir que el contenido
+            web sea más accesible principalmente para personas con discapacidades.</p>
+        <br />
+        <h3 style="font-weight: bold">Validación en XHMTL</h3>
+        <br />
+        <p id="d1">Con la validación conseguimos verificar que se cumplen las directrices que marca el W3C acerca del
+            lenguaje, con lo que mediante la validación habremos hecho todo lo posible para que la página web se vea
+            bien en cualquier dispositivo. Esto proporciona un valor añadido a nuestro diseño web. Ya será
+            responsabilidad de cada navegador el mostrarla conforme a los estándares del lenguaje.</p>
+        <br />
+        <h3 style="font-weight: bold">Servidor web</h3>
+        <br />
+        <p>En su significado más amplio, un servidor web es un ordenador de gran potencia, dotado de un hardware y un
+            software adecuados, que está al servicio de otros dispositivos o personas que le solicitan información.</p>
+        <br />
+        <h3 style="font-weight: bold">Protocolo HTTP</h3>
+        <br />
+        <p>Es un sistema de reglas que permiten que dos o mas dispositivos se comuniquen entre sí para transmitir
+            información mediante archivos a través de Internet. Dichos archivos pueden tratar y enviar la información
+            según diversos métodos.</p>
+        <p>Un ejemplo de método HTTP POST sería el siguiente:</p>
+        <br />
+        <img src="img/post.jpg" alt="Formulario POST" width="400" height="100" /><br /><br />
+        <p>Un ejemplo de método HTTP GET sería el siguiente:</p>
+        <br />
+        <img src="img/get.jpg" alt="Formulario GET" width="400" height="100" /><br /><br /><br />
+        <p>Mediante el método GET los datos a enviar aparecen en la barra de direcciones del navegador, con este método
+            no debe usarse para enviar datos sensibles.</p>
+        <br />
+        <h3 style="font-weight: bold">Qué es Apache</h3>
+        <br />
+        <p>Apache es un servidor web de código abierto. Esta desarrollado y mantenido por una comunidad de usuarios en
+            torno a la Apache Software Foundation, que entre otras cosas permite que haya parches de seguridad regulares
+            y actualizados con frecuencia. Actualmente es uno de los servidores web más utilizados debido a su seguridad
+            y estabilidad.</p>
+        <br />
+        <h3 style="font-weight: bold">Qué es XAMPP</h3>
+        <br />
+        <p>Es un paquete de software libre, cuyo nombre es un acrónimo: X, que indica que es multiplataforma; A, de
+            Apache como servidor web; M, de MariaDB/MySQL como sistema de gestión de base de datos y P, de PHP/Perl como
+            lenguajes de programación.</p>
+        <br />
+        <p style="text-align: right;"><a href="1.html">Ir al principio</a></p>
+    </div>
+
+    <footer>
+        <div class="container-fluid text-center p-3" style="background-color: lightgrey;">
+            <p> Eduardo Rafael Cañizares Caballero - 2º DAWS - 2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>
